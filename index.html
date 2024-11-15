@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="home_style.css" rel="stylesheet">
+    <link rel="preload" href="./BlackJack/main_style.css" as="style">
+    <link rel="preload" href="./BlackJack/blackjack.js" as="script">
+    <link rel="icon" type="image/png" href="Images/logoico.ico">
     <title>21 Aces</title>
 </head>
 <body>
-    <h1>21 Aces</h1>
-    <div class="button-container">
-        <a href="./BlackJack/main.html">
-            <button>
-                Access BlackJack table
-            </button>
-        </a>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GAME TABLES</a></li>
+                <li><a href="#">RULES</a></li>
+                <li><a href="#">DAILY SPIN</a></li>
+                <li><a href="#">MY PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="to">21</h1>
+        <h1 id="aces">ACES</h1>
+        <div class="button-container">
+            <a href="./BlackJack/blackjack.html">
+                <button class="blackjack-button">Play BlackJack</button>
+            </a>
+            <a href="./Poker/main.html">
+                <button class="poker-button">Play Poker</button>
+            </a>
+        </div>
+    </main>
 </body>
 </html>

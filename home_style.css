@@ -1,33 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+@font-face {
+    font-family: 'PokerKings';
+    src: url('./Fonts/PokerKings-Regular.ttf') format('truetype');
+    font-weight: normal; /* ou bold si c'est une version gras */
+    font-style: normal; /* ou italic si c'est une version italique */
 }
 
+@font-face {
+    font-family: 'VerveShadow';
+    src: url('Fonts/VerveShadow.ttf') format('truetype');
+    font-weight: normal; /* ou bold si c'est une version gras */
+    font-style: normal; /* ou italic si c'est une version italique */
+}
 
-h1 {
-    text-align: center;
-    margin: 100px;
+*{
+    font-family: "PokerKings", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+    height: 100vh;
+    background-image: url('Images/bg-main.jpg'); /* Remplacer par le chemin de l'image de fond */
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    justify-content: space-between;
 }
 
-.button-container {
-    flex-grow: 1;
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond transparent pour la navbar */
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+    color: #FFD700; /* Texte en or */
+    margin-bottom: 50px;
+}
+
+#to{
+    font-family: 'VerveShadow';
+
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    color: white;
+}
+
+.blackjack-button {
+    background-color: #2196f3; /* Bleu pour BlackJack */
+}
+
+.poker-button {
+    background-color: #f44336; /* Rouge pour Poker */
 }
